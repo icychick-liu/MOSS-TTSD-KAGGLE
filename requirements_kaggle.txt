@@ -1,0 +1,31 @@
+# Kaggle环境专用依赖文件
+# 针对Kaggle T4 GPU环境优化
+
+# 核心深度学习框架
+torch>=2.0.0
+torchaudio>=2.0.0
+transformers==4.53.2
+
+# 加速和优化
+accelerate>=0.20.0
+liger_kernel
+
+# 音频处理
+soundfile
+librosa
+pydub
+
+# 数据处理
+numpy>=1.21.0
+PyYAML
+einops
+tqdm
+
+# Hugging Face生态
+huggingface_hub
+
+# Web界面（可选）
+gradio>=4.0.0
+
+# 注意：flash-attn需要单独安装，可能在某些环境下失败
+# pip install flash-attn --no-build-isolation
